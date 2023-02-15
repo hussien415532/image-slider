@@ -23,48 +23,46 @@ body {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-  transform:translateX(-50%) ;
-  -webkit-transform:translateX(-50%) ;
-  -moz-transform:translateX(-50%) ;
-  -ms-transform:translateX(-50%) ;
-  -o-transform:translateX(-50%) ;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
-.image-container img.active
-{
+.image-container img.active {
   opacity: 1;
 }
 .control {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  max-width: 600px;
   margin: auto;
 }
 .control .prev,
 .control .next {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(71, 169, 255);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    font-size: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(71, 169, 255);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
 }
-.control .bullets
-{
+.control .bullets {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color:#ffe5e5;
+  background-color: #ffe5e5;
   padding: 12px;
   border-radius: 26px;
   -webkit-border-radius: 26px;
@@ -72,8 +70,7 @@ body {
   -ms-border-radius: 26px;
   -o-border-radius: 26px;
 }
-.control .bullets span
-{
+.control .bullets span {
   width: 28px;
   height: 28px;
   background-color: #b6ffe7;
@@ -88,31 +85,25 @@ body {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.control .bullets span.active
-{
-  background-color:#1fffb4 ;
+.control .bullets span.active {
+  background-color: #1fffb4;
 }
-.control .disable
-{
+.control .disable {
   background-color: rgb(170 215 255);
 }
-@media (max-width:600px) {
-  .image-container
-  {
+@media (max-width: 600px) {
+  .image-container {
     width: 390px;
     height: 250px;
   }
-  .image-container img
-  {
+  .image-container img {
     width: 390px;
   }
-  .control .bullets span
-  {
-width: 20px;
-height: 20px;
+  .control .bullets span {
+    width: 20px;
+    height: 20px;
   }
-  .control .bullets
-  {
+  .control .bullets {
     gap: 4px;
   }
 }
